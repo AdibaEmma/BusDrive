@@ -179,7 +179,7 @@
         
         $.ajax({
             type: "POST",
-            url: "",
+            url: "locahost:4000/users/user_signup",
             data: "email=" + email + "&name=" + name + "&password=" + password + "&terms=" + terms, 
             success: function(text) {
                 if (text == "success") {
@@ -234,7 +234,7 @@
         
         $.ajax({
             type: "POST",
-            url: "",
+            url: "localhost:4000/users/user_signin",
             data: "email=" + email + "&password=" + password, 
             success: function(text) {
                 if (text == "success") {
